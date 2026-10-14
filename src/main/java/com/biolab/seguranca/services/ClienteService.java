@@ -26,6 +26,7 @@ public class ClienteService {
         }else {
             cliente.setRole(dto.getRole());
         }
+        clienteRepository.save(cliente);
         return cliente;
     }
 }
